@@ -51,7 +51,7 @@ class User extends Authenticatable
     public function getphone()
     {
         //return $this->hasOne(Phone::class,'user_id');    // one to many relation
-        return $this->hasMany(Phone::class, 'user_id');
+        return $this->hasMany(Phone::class, 'user_id');   //many to many
     }
 
 }
